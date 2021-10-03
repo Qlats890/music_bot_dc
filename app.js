@@ -8,5 +8,15 @@ bot.on("ready",()=>{
   console.log("ON !");
 })
 
-// console.log(process.env.TOKEN);
+bot.on("messageCreate",message=>{
+  console.log(message.content);
+  // if(message.content[0] == '!'){
+  //   console.log(message);
+  //   switch(message.content.slice(1,-1)){
+  //     case "ping" : 
+  //       message.reply("kaget")
+  //   }
+  // }
+});
+
 bot.login(process.env.TOKEN)
