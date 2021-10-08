@@ -8,12 +8,15 @@ bot.on("ready",()=>{
   console.log("ON !");
 })
 
+prefix = '!'
+
 bot.on("messageCreate",(message)=>{
-  // console.log(message.content);
-  if(message.content == '!ping'){
-    message.channel.send('Pong')
-    // console.log(message.channel);
-  }
-});
+  console.log(message.content)
+  if(message.content[0] === prefix){
+    console.log(message.content)
+    switch(message.content.substring(1,message.content.length)){
+      case "ping" : 
+        message.reply("kaget")
+    }}});
 
 bot.login(process.env.TOKEN)
