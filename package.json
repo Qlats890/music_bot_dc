@@ -18,10 +18,7 @@
   },
   "homepage": "https://github.com/Qlats890/music_bot_dc#readme",
   "dependencies": {
-    "@discordjs/builders": "^0.5.0",
-    "@discordjs/rest": "^0.1.0-canary.0",
     "@discordjs/voice": "^0.6.0",
-    "discord-api-types": "^0.22.0",
     "discord-player": "^5.1.0",
     "discord-ytdl-core": "^5.0.4",
     "discord.js": "^13.1.0",
